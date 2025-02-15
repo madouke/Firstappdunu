@@ -10,7 +10,6 @@ class HomePage  extends StatelessWidget {
   Widget build(BuildContext context) {
     final spacer = const SizedBox(height:32);
     final width=MediaQuery.of(context).size.width;
-    final image = img.Image(width: 256, height: 256);
     return Scaffold(
     appBar: AppBar(
       title:const Text(
@@ -22,8 +21,15 @@ class HomePage  extends StatelessWidget {
         builder: (context){
           return Column(
             children: [
+              Row(
+                children: [
               const Text("What would you like to cook today ?"),
               const SizedBox(height: 50,),
+              CircleAvatar(
+                    radius: 20, // Image radius
+                    backgroundImage: AssetImage('assets/profil.jpg'),
+                  ),
+              ]),
          spacer,
          SearchBar(
           leading: Icon(Icons.search),

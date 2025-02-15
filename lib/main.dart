@@ -8,6 +8,7 @@ void main() {
 }
 
 class Recipe extends StatelessWidget {
+  // ignore: use_super_parameters
   const Recipe({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
@@ -23,6 +24,7 @@ class Recipe extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  // ignore: use_super_parameters
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;

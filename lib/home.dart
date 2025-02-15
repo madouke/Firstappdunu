@@ -47,67 +47,97 @@ class HomePage  extends StatelessWidget {
            Text('See all',style: TextStyle(
         color: Colors.green,
           ))],
-          ),    
+          
+          ), 
+
         SingleChildScrollView(
           padding: EdgeInsets.all(15),
           scrollDirection: Axis.horizontal,
           child: Row(
             spacing: 25,
             children: [
-             Container(
-              decoration: BoxDecoration(
-                borderRadius:BorderRadius.all(Radius.circular(15)),
-              ),
-              child: 
-              Column(
-                
-               crossAxisAlignment:CrossAxisAlignment.center,
-                children: [
-                  
-                  Image.asset(
-                'assets/breakfast.jpeg',
-                   width: 150,  
-                   height:150,
+             Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/breakfast.jpeg'),
+                   fit:BoxFit.cover,
                 ),
-             
-                Text('Breakfast',style:TextStyle(color:Colors.black ),)],),
-                
-                ),
-                
-               Column(
-               crossAxisAlignment:CrossAxisAlignment.center,
-                children: [
-                  Image.asset(
-                'assets/brunch.jpeg',
-                   width: 150,  
-                   height: 150,
-                ),
-             
-                Text('Brunch',style:TextStyle(color:Colors.black ),)],),
+             ),
 
-                 Column(
-               
-                children: [
-                  Image.asset(
-                  'assets/dinner.jpeg',
-                   width: 150,  
-                   height:150,
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.1,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
                 ),
+                Text('Breakfast',style:TextStyle(color:Colors.black ),),
+                ],),
+                
              
-                  Text('Dinner',style:TextStyle(color:Colors.black ),)],),
+             Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/brunch.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.1,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                Text('Brunch',style:TextStyle(color:Colors.black ),),
+                ],),
+                 Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/dinner.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.1,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                Text('Dinner',style:TextStyle(color:Colors.black ),),
+                ],),
                   
                  
                  Column(
-               
-                children: [
-                  Image.asset(
-                   'assets/dessert.jpeg' ,
-                   width: 150,  
-                   height: 150,
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/dessert.jpeg'),
+                   fit:BoxFit.cover,
                 ),
-             
-                  Text('Dessert',style:TextStyle(color:Colors.black ),)],),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.1,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                Text('Dessert',style:TextStyle(color:Colors.black ),),
+                ],),
                   
+                 
                   
             ],
           ),
@@ -118,6 +148,7 @@ class HomePage  extends StatelessWidget {
               Text('Recommendation',style:TextStyle(
           fontWeight:FontWeight.bold
          )),
+         
            Text('See all',style: TextStyle(
         color: Colors.green,
           ))],
@@ -129,45 +160,89 @@ class HomePage  extends StatelessWidget {
           child: Row(
             spacing: 25,
             children: [
-              Column(
-               crossAxisAlignment:CrossAxisAlignment.center,
-                children: [
-                  Image.asset(
-                'assets/creamy.jpeg'
-                   
-                ),
-             
-                Text('Creamy pasta',style:TextStyle(fontWeight:FontWeight.bold),)],),
-
+              
                Column(
-               crossAxisAlignment:CrossAxisAlignment.center,
-                children: [
-                  Image.asset(
-                'assets/macaron.jpeg'
-                  
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/creamy.jpeg'),
+                   fit:BoxFit.cover,
                 ),
-             
-                Text('Macarons',style:TextStyle(fontWeight:FontWeight.bold ),)],),
+             ),
 
-                 Column(
-               
-                children: [
-                  Image.asset(
-                  'assets/salad.jpeg'
-                  
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.25,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
                 ),
-             
-                  Text('Salad',style:TextStyle(fontWeight:FontWeight.bold ),)],),
+                Text('Creamy pasta',style:TextStyle(fontWeight:FontWeight.bold),),
+                ],),
+                  
+                 
+                Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/macaron.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
 
-                 Column(
-               
-                children: [
-                  Image.asset(
-                  'assets/chiken.jpeg'
-                  
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.25,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
                 ),
-             
-                  Text('chiken',style:TextStyle(fontWeight:FontWeight.bold ),)],),
+                Text('Macarons',style:TextStyle(fontWeight:FontWeight.bold),),
+                ],),
+                  
+                  Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/salad.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.25,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                Text('Salad',style:TextStyle(fontWeight:FontWeight.bold),),
+                ],),
+                  
+
+                  Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/chiken2.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.2,
+               height: MediaQuery.of(context).size.height*0.25,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                Text('Chiken',style:TextStyle(fontWeight:FontWeight.bold),),
+                ],),
+                  
   
             ],
           ),

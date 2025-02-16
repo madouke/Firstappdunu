@@ -14,6 +14,9 @@ class Search  extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child:
+      ListView(
+         children: [
+      
     Column(
         children: [
          Text('Bookmark',style:TextStyle(
@@ -246,7 +249,7 @@ class Search  extends StatelessWidget {
              ], ),
              ),
           ]
-          ));
+          )]));
         
     
        }

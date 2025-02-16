@@ -16,7 +16,10 @@ class Save extends StatelessWidget {
           builder: (context) {
             return Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Column(
+              child: 
+              ListView(
+                children: [
+                 Column(
                 children: [
                    Container(
                     height: MediaQuery.of(context).size.height * 0.4,
@@ -60,7 +63,7 @@ class Save extends StatelessWidget {
                SaveComponent(), 
               ],
               ),
-            );
+        ]));
           },
         ),
       ),

@@ -25,6 +25,8 @@ class HomePage  extends StatelessWidget {
            return Padding(  
               padding: const EdgeInsets.all(16.0),
           child:
+          ListView(
+            children:[
            Column(
             children: [
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -330,7 +332,7 @@ class HomePage  extends StatelessWidget {
           ),
          ],
          ),
-      ) ;   
+    ])) ;   
     },
   ),
     

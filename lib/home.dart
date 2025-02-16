@@ -42,6 +42,7 @@ class HomePage  extends StatelessWidget {
           hintText: 'Search any recipes"',
           backgroundColor: WidgetStateProperty.all(Colors.white),
          ),
+          spacer,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children:[

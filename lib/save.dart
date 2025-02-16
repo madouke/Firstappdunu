@@ -16,13 +16,15 @@ class Save extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  Expanded(child: 
+                   Container(
+                    height: MediaQuery.of(context).size.height * 0.4,
+                    child:
                   Stack(
                     children: [
                       
                       Positioned.fill(
                         child: Image.asset(
-                          'assets/macaron.jpeg',
+                          'assets/macaron2.jpeg',
                           fit: BoxFit.cover, 
                         ),
                       ),

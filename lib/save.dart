@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import  'save_component.dart';
 
 class Save extends StatelessWidget {
   Save({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         title: const Text('DUNU'),
@@ -53,7 +55,10 @@ class Save extends StatelessWidget {
                       ),
                     ],
                   ),
-              )],
+                
+              ),
+               SaveComponent(), 
+              ],
               ),
             );
           },

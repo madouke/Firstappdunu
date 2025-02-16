@@ -14,34 +14,36 @@ class SaveComponent extends StatelessWidget {
               Text('Rose Macaron',style:TextStyle(
           fontWeight:FontWeight.bold
          )),
-         
-          IconButton(
-             icon: Icon(Icons.star, color: const Color.fromARGB(255, 109, 103, 50)),
-               onPressed: () {
-                                
-                              },
-          )]
+          Row(
+           mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.star, color: Colors.yellow, size: 40), 
+              Icon(Icons.star, color: Colors.yellow, size: 40), 
+              Icon(Icons.star, color: Colors.yellow, size: 40), 
+              Icon(Icons.star, color: Colors.yellow, size: 40),             ],)]
           ),
+          Row(children: [
            Text('by Rachelle William',style: TextStyle(
         fontWeight:FontWeight.w200,
           )),
+          ],),
             Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
             children:[
             IconButton(
-             icon: Icon(Icons.time_to_leave, color: const Color.fromARGB(255, 250, 250, 249)),
+             icon: Icon(Icons.timer, color: const Color.fromARGB(255, 229, 229, 186)),
                onPressed: () {
                                 
                               },
           ),
            IconButton(
-             icon: Icon(Icons.time_to_leave_outlined, color: const Color.fromARGB(255, 250, 250, 249)),
+             icon: Icon(Icons.hot_tub_outlined, color: const Color.fromARGB(255, 216, 216, 155)),
                onPressed: () {
                                 
                               },
           )  ,
            IconButton(
-             icon: Icon(Icons.fire_truck_outlined, color: const Color.fromARGB(255, 250, 250, 249)),
+             icon: Icon(Icons.stop, color: const Color.fromARGB(255, 197, 197, 146)),
                onPressed: () {
                                 
                               },
@@ -57,11 +59,63 @@ class SaveComponent extends StatelessWidget {
          )),
           ]
           ),
+          spacer,
             Text('Rose creamy is the best kind of dessert!These Rose'
              'Macarons are simply heavenly!Delicates little cookies filled'
               'with rose creamy',style:TextStyle(
+          fontWeight:FontWeight.w100
+         )),
+      spacer,
+       Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+              Text('Ingredients',style:TextStyle(
           fontWeight:FontWeight.bold
          )),
-          ]);
-          }
-          }
+          ]
+          ),
+           spacer,
+       Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+           Container(
+             width: 70,
+            height: 70,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Colors.blueAccent,),
+              child: Image.asset(
+              'assets/cuillere.jpeg',
+              fit: BoxFit.cover, ),
+           ),
+        Text('granulat au sucre',style:TextStyle(
+          fontWeight:FontWeight.w300
+        )),
+           Text('160',style:TextStyle(
+          fontWeight:FontWeight.w300
+        ))]
+          ),
+            spacer,
+       Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+           Container(
+             width: 70,
+            height: 70,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Colors.blueAccent,),
+              child: Image.asset(
+              'assets/ground.jpeg',
+              fit: BoxFit.cover, ),
+           ),
+        Text('ground almond',style:TextStyle(
+          fontWeight:FontWeight.w300
+        )),
+           Text('160',style:TextStyle(
+          fontWeight:FontWeight.w300
+        ))]
+          ),
+      ]);
+     }
+   }  

@@ -21,7 +21,11 @@ class HomePage  extends StatelessWidget {
     body: Center(
      child:Builder(
         builder: (context){
-          return Column(
+      
+           return Padding(  
+              padding: const EdgeInsets.all(16.0),
+          child:
+           Column(
             children: [
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -143,8 +147,10 @@ class HomePage  extends StatelessWidget {
           ),
         ),
          Row(
+          
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children:[
+              
               Text('Recommendation',style:TextStyle(
           fontWeight:FontWeight.bold
          )),
@@ -179,6 +185,7 @@ class HomePage  extends StatelessWidget {
                )
                 ),
                 Text('Creamy pasta',style:TextStyle(fontWeight:FontWeight.bold),),
+                Text('by David', style:TextStyle(fontWeight:FontWeight.w100),),
                 ],),
                   
                  
@@ -200,6 +207,7 @@ class HomePage  extends StatelessWidget {
                )
                 ),
                 Text('Macarons',style:TextStyle(fontWeight:FontWeight.bold),),
+                Text('by Rachel William', style:TextStyle(fontWeight:FontWeight.w100),),
                 ],),
                   
                   Column(
@@ -220,6 +228,7 @@ class HomePage  extends StatelessWidget {
                )
                 ),
                 Text('Salad',style:TextStyle(fontWeight:FontWeight.bold),),
+                Text('by Uriel Jonh', style:TextStyle(fontWeight:FontWeight.w100),),
                 ],),
                   
 
@@ -229,7 +238,7 @@ class HomePage  extends StatelessWidget {
                decoration: BoxDecoration(
                   borderRadius:BorderRadius.all(Radius.circular(15)),
                   image:DecorationImage(image: 
-                  AssetImage('assets/chiken2.jpeg'),
+                  AssetImage('assets/chiken3.jpeg'),
                    fit:BoxFit.cover,
                 ),
              ),
@@ -241,17 +250,90 @@ class HomePage  extends StatelessWidget {
                )
                 ),
                 Text('Chiken',style:TextStyle(fontWeight:FontWeight.bold),),
+                Text('by Fredi', style:TextStyle(fontWeight:FontWeight.w100),),
                 ],),
                   
   
             ],
           ),
-        )
-         ], );     
-        }
-    ),
+        ),
+           
+        Row(
+          
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+              
+              Text('Recipes of the week',style:TextStyle(
+          fontWeight:FontWeight.bold
+         )),
+         
+           Text('See all',style: TextStyle(
+        color: Colors.green,
+          ))],
+          ),  
+         
+         SingleChildScrollView(
+          padding: EdgeInsets.all(5),
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            spacing: 25,
+            children: [
+              
+               Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/hambuger2.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.5,
+               height: MediaQuery.of(context).size.height*0.3,
+               child:Padding(
+                padding: const EdgeInsets.all(8.0)
+               )
+                ),
+                Text('Hambuger',style:TextStyle(fontWeight:FontWeight.bold),),
+                Text('by Fari', style:TextStyle(fontWeight:FontWeight.w100),),
+                ],),
+                  
+                 
+                Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/risotto.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.5,
+               height: MediaQuery.of(context).size.height*0.3,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                Text('Risotto',style:TextStyle(fontWeight:FontWeight.bold),),
+                Text('by Lynda', style:TextStyle(fontWeight:FontWeight.w100),),
+                ],),
+         
+           ], 
+         
+           ),
+         
+          ),
+         ],
+         ),
+      ) ;   
+    },
+  ),
     
-      )
+   ),
     )  ;
   }
 }

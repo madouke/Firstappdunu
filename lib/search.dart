@@ -98,10 +98,155 @@ class Search  extends StatelessWidget {
              )
           ],),  
              ], ),
+             ),
+             spacer,
+        Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+              Text('Made it',style:TextStyle(
+          fontWeight:FontWeight.bold
+         )),
+           Text('See all',style: TextStyle(
+        color: Colors.green,
+          ),)],
+    ),
+    SingleChildScrollView(
+          padding: EdgeInsets.all(5),
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            spacing: 25,
+            children: [
+             Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/smoothie.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.6,
+               height: MediaQuery.of(context).size.height*0.3,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                
+                ],),
+                
+              Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/avocat2.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.3,
+               height: MediaQuery.of(context).size.height*0.15,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                spacer,
+                Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/avocat3.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.3,
+               height: MediaQuery.of(context).size.height*0.135,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+                )
              )
-            ]
-          )
-          );
+          ],),  
+             ], ),
+             ),
+          spacer,
+        Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+              Text('Breakfast',style:TextStyle(
+          fontWeight:FontWeight.bold
+         )),
+           Text('See all',style: TextStyle(
+        color: Colors.green,
+          ),)],
+    ),
+    SingleChildScrollView(
+          padding: EdgeInsets.all(5),
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            spacing: 25,
+            children: [
+             Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/breacfast3.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.6,
+               height: MediaQuery.of(context).size.height*0.3,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                
+                ],),
+                
+              Column(
+              children: [
+               Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/petitdej1.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.3,
+               height: MediaQuery.of(context).size.height*0.15,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+               )
+                ),
+                spacer,
+                Container(
+               decoration: BoxDecoration(
+                  borderRadius:BorderRadius.all(Radius.circular(15)),
+                  image:DecorationImage(image: 
+                  AssetImage('assets/breakfast5.jpeg'),
+                   fit:BoxFit.cover,
+                ),
+             ),
+
+               width:MediaQuery.of(context).size.width*0.3,
+               height: MediaQuery.of(context).size.height*0.135,
+               child:Padding(
+                padding: const EdgeInsets.all(9.0)
+                )
+             )
+          ],),  
+             ], ),
+             ),
+          ]
+          ));
         
     
        }

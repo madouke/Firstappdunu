@@ -93,7 +93,13 @@ class _MyHomePageState extends State<MyHomePage>
           Search(), 
           Save(),
         ],
+
       ),
-    );
+      floatingActionButton: FloatingActionButton(backgroundColor:Colors.green,
+      onPressed: () {
+        const Icon(Icons.add,color:Colors.green);
+      } ,)
+    )
+    ;
   }
 }
